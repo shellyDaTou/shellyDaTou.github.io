@@ -22,3 +22,16 @@ $('.showLayer').on('click',function() {
     console.log(src, '00000');
 })
 
+// 产品中心点页面击不同类目展示不同类商品
+$('.kind-list li').on('click', function() {
+    const str = $(this).attr('class');
+    $('#'+str).removeClass('hide-kind-list')
+              .siblings()
+              .addClass('hide-kind-list');
+
+    $(this).addClass('visite-kind-list')
+           .siblings()
+           .removeClass('visite-kind-list');
+    console.log($(this), '888888')
+})
+
