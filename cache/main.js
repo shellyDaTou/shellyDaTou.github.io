@@ -2,9 +2,6 @@ $(function(){
   //    初始化
   $('#showLayerImg').hide();
 })
-
-var layer = layui.layer;
-
 $('.showLayer').on('click',function() {
     var layerImg =  $('#showLayerImg');
     var src = $(this).find('img').attr('src');

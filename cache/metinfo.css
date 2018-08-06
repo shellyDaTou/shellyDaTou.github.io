@@ -13168,7 +13168,7 @@ body.met-navfixed {
   text-decoration: none;
 }
 .met-column-nav ul.met-column-nav-ul > li a.link:hover,
-.met-column-nav ul.met-column-nav-ul > li a.link:active,
+.met-column-nav ul.met-column-nav-ul > li a.link.active,
 .visite-kind-list {
   color: #e4c17e;
   -webkit-transition: all 0.3s ease-out;
