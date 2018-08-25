@@ -23,6 +23,8 @@
         href="https://cache.amap.com/lbs/static/main1119.css" />
     <script type="text/javascript"
         src="https://webapi.amap.com/maps?v=1.4.8&key=93150679f64fbe7cd67ae429be4014ff&plugin=AMap.Geocoder"></script>
+    <!-- <script type="text/javascript"
+        src="https://webapi.amap.com/maps?v=1.4.9&key=93150679f64fbe7cd67ae429be4014ff&plugin=AMap.Driving"></script> -->
     <script type="text/javascript"
         src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
 </head>
@@ -303,6 +305,16 @@
             }
             map.setFitView();
         }
+
+            //构造路线导航类
+    var driving = new AMap.Driving({
+        map: map,
+        panel: "panel"
+    });
+    // 根据起终点经纬度规划驾车导航路线
+    driving.search(new AMap.LngLat(116.379028, 39.865042), new AMap.LngLat(116.427281, 39.903719),{
+        waypoints:[new AMap.LngLat(116.379028, 39.885042)]
+    });
     </script>
 </body>
 </html>

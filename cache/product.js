@@ -26,39 +26,136 @@ $(function(){
 
 //   产品路径、类型、名称
   let productArr = [{
-      url: 'upload/1505356879.jpg',
+      url: 'upload/bed601.jpg',
       type: 'bed',
-      name: '床1'
+      name: '床601'
   },
   {
-      url: 'upload/1505356890.jpg',
+    url: 'upload/bed602.jpg',
+    type: 'bed',
+    name: '床602'
+},
+{
+    url: 'upload/bed603.jpg',
+    type: 'bed',
+    name: '床603'
+},{
+    url: 'upload/bed605green.jpg',
+    type: 'bed',
+    name: '床605 草绿色'
+},{
+    url: 'upload/bed605white.jpg',
+    type: 'bed',
+    name: '床601 白色'
+},{
+    url: 'upload/bed606.jpg',
+    type: 'bed',
+    name: '床606'
+},
+{
+    url: 'upload/bed607.jpg',
+    type: 'bed',
+    name: '床607'
+},{
+    url: 'upload/bed608.jpg',
+    type: 'bed',
+    name: '床608'
+},{
+    url: 'upload/bed609.jpg',
+    type: 'bed',
+    name: '床609'
+},{
+    url: 'upload/bedup601.jpg',
+    type: 'bed',
+    name: '子母床601'
+},{
+    url: 'upload/bed602.jpg',
+    type: 'bed',
+    name: '子母床602'
+},
+  {
+      url: 'upload/desk601.jpg',
       type: 'desk',
-      name: '桌1'
+      name: '桌601'
   },
   {
-      url: 'upload/1505356924.jpg',
-      type: 'chair',
-      name: '椅1'
-  },
+    url: 'upload/desk602.jpg',
+    type: 'desk',
+    name: '桌602'
+},
+{
+    url: 'upload/desk603.jpg',
+    type: 'desk',
+    name: '桌603'
+},
+{
+    url: 'upload/desk604.jpg',
+    type: 'desk',
+    name: '桌604'
+},
   {
-      url: 'upload/1505356986.jpg',
+      url: 'upload/cabinet601.jpg',
       type: 'cabinet',
-      name: '柜1'
+      name: '柜601'
   },
   {
-      url: 'upload/1505374754black.jpg',
+    url: 'upload/cabinet602.jpg',
+    type: 'cabinet',
+    name: '柜602'
+},{
+    url: 'upload/cabinet605.jpg',
+    type: 'cabinet',
+    name: '柜605'
+},{
+    url: 'upload/cabinetbook601.jpg',
+    type: 'cabinet',
+    name: '书柜601'
+},{
+    url: 'upload/cabinetclose601.jpg',
+    type: 'cabinet',
+    name: '衣柜601'
+},
+{
+    url: 'upload/cabinetDou601.jpg',
+    type: 'cabinet',
+    name: '四斗五斗柜601'
+},{
+    url: 'upload/cabinetshoe601.jpg',
+    type: 'cabinet',
+    name: '鞋柜601'
+},{
+    url: 'upload/cabinetTV601.jpg',
+    type: 'cabinet',
+    name: '电视柜601'
+},{
+    url: 'upload/cabinetTV602.jpg',
+    type: 'cabinet',
+    name: '电视柜602'
+},{
+    url: 'upload/cabinetTV603.jpg',
+    type: 'cabinet',
+    name: '电视柜603'
+},{
+      url: 'upload/sofa601.jpg',
       type: 'sofa',
-      name: '沙发1'
+      name: '沙发601'
   },
   {
-      url: 'upload/1505379305.jpg',
-      type: 'cabinet',
-      name: '柜2'
-  },{
-      url: 'upload/1505381827.jpg',
-      type: 'bed',
-      name: '床2'
-  }];
+    url: 'upload/sofa602.jpg',
+    type: 'sofa',
+    name: '沙发602'
+},
+{
+    url: 'upload/sofa603.jpg',
+    type: 'sofa',
+    name: '沙发603'
+},
+{
+    url: 'upload/sofa605.jpg',
+    type: 'sofa',
+    name: '沙发605'
+},
+];
 
   // 产品中心点页面击不同类目展示不同类商品
   $('.kind-list li').on('click', function() {
@@ -75,7 +172,7 @@ $(function(){
   function filterLiArr(value= 'all') {
       let str = '';
       let newArr = [];
-      if (value === all ) {
+      if (value === 'all' ) {
           // 直接拼接所以数组项
           jointLiStr(productArr);
           return;
@@ -102,8 +199,7 @@ $(function(){
                           </div>
                           <img class="cover-image"
                               src="${item['url']}"
-                              alt="${item['name']}"
-                              style='height:200px;'>
+                              alt="${item['name']}">
                       </a>
                   </figure>
                   <h4 class="widget-title">
