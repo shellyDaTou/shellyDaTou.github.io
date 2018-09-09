@@ -9,7 +9,7 @@ $('.showLayer').on('click',function() {
     layer.open({
         type: 1,
         title: false,
-        area: ['60%', '60%'],
+        area: ['80%', '60%'],
         content: layerImg,
         cancel: function() {
             layerImg.hide();
