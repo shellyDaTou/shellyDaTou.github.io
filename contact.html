@@ -14,9 +14,9 @@
         content="sch"
         data-variable=",,10001,,," />
     <meta name="description"
-        content="纯实木家具，全屋定制" />
+        content="纯实木家具，全屋定制，成都沃欧思" />
     <meta name="keywords"
-        content="实木家具|全屋定制" />
+        content="实木家具|全屋定制|成都沃欧思" />
     <link rel='stylesheet'
         href='cache/metinfo.css'>
     <link rel="stylesheet"
@@ -278,6 +278,11 @@
                 }
             });
             geocoder.getLocation("成都市太平园", function(status, result) {
+                if (status === 'complete' && result.info === 'OK') {
+                    geocoder_CallBack(result);
+                }
+            });
+            geocoder.getLocation("红星美凯龙(金牛商场店)", function(status, result) {
                 if (status === 'complete' && result.info === 'OK') {
                     geocoder_CallBack(result);
                 }

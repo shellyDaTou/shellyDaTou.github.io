@@ -162,10 +162,6 @@ $(function(){
       $('#showProductUl').empty();
       const str = $(this).attr('class');
       filterLiArr(str);
-      // TODO 添加点击后的样式
-      // $(this).addClass('visite-kind-list')
-      //        .siblings()
-      //        .removeClass('visite-kind-list');
   })
 
   // 展示图片
